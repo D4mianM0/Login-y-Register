@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        0deg, rgba(0, 0, 0, .2),
+        rgba(0, 0, 0, .2)
+    ) 
+    
+    ,url(../img/bg.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.principal__form {
+    background: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(5px);
+    position: relative;
+    min-width: 350px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+}
+
+.principal__form h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+    padding-top: 20px;
+    color: white;
+    cursor:default;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.username #email, .password #password {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+#email, #password {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+}
+
+
+.username #email::placeholder, .password #password::placeholder {
+    background-color: transparent;
+    color: white;
+    left: -20px;
+    transition: 0.20s;
+}
+
+#email:active,
+#password:active{
+    background-color: transparent;
+
+}
+
+#email:focus::placeholder,
+#password:focus::placeholder {
+    background-color: transparent;
+    color: transparent;
+}
+
+
+i {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 25px;
+    left: 60px;
+}
+
+.rememberme {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin-left: -45px;
+    color: white;
+}
+
+#checkbox {
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn {
+    padding: 1px 15px;
+    margin-bottom: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 20px;
+    background: none;
+    backdrop-filter: blur(20px);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: rgb(218, 200, 255);;
+    color: rgb(218, 200, 255);
+}
+
+p {
+    cursor: default;
+}
+
+p, a {
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: rgb(224, 191, 255);
+}
+
